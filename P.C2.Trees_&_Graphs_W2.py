@@ -24,5 +24,28 @@
 #       3. incidence matrix representive
 #
 
-####    Traversals --
-#       operation of the graph  - 
+####    Traversals -- Operation ofhe the graph
+#       operation of the graph  - traversal will visit all the node in the graph in some order, CAN ONLY visit a node once!
+#       A. visit node only once 
+#       B. violate a new node, ist must be along the edge starting from the nodes already visited
+
+#       Google ----  crawing the web  ---- html is graph --- link take the link the new edge
+#              
+
+####    Breadth First Search ---BFS
+#       FIFO --- staring the 1 node, visiting the each node, if visited, queue data structure, define the behaivor of the data structure; 
+#       ----BFS --- define the seraching queue --- pi parent, d is the depth of hte node; ----visited true/false
+
+#   def bfs(G,s)
+#    Q  {s} -  {contain the starting node}
+#    s.d  = 0 (depth is 0 initial)
+#    s.seen = True
+#    s.parent = pi
+#    Q != 0
+#    u = dequeue(Q)
+#    for all u <= adj(u, G) 
+#       if (!v.seen): 
+#           v.d = u.d + 1
+#           v.pi = u
+#           v.seen = true
+#           dequeue(u,Q)
