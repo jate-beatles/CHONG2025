@@ -49,3 +49,36 @@
 #           v.pi = u
 #           v.seen = true
 #           dequeue(u,Q)
+
+####    DFS  - Depth First search 
+
+#   def(dfs) Graph G, node u, 
+#       Global time =1 
+#       v {pi: parent;   d:= discovery time; f:= finish time}
+#       seen := false 
+#       book keeping 
+#       if (v.seen) :  RETURN
+#       for all v <= adj(u) 
+#           if (no v.seen)
+#               v.pi := u
+#               v.d := time 
+#               time = time +1
+#               dfsvisit(G,v)
+#               v.seen = TURE
+#
+##  dfs its creat a DFS tree after the serach
+
+##      Property of DFS - outer loop: for i = 1 to n, n is the number of the nodes dfsvisit (G,i)
+
+#  Back edge / forward edge / craoss edge 
+#  no direction of the graph, is a forest, technical is no connected
+#   Back edge is ancentad in a tree
+#   if there is a back edge there will be a circle
+#   
+
+####     Topological Sort -----Directed Acyclic Graph
+##       1. running the DFS firstly, 
+#        2. sort the nodes in descending order according to the finishing time
+#        
+#   
+#    
