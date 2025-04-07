@@ -79,6 +79,23 @@
 ####     Topological Sort -----Directed Acyclic Graph
 ##       1. running the DFS firstly, 
 #        2. sort the nodes in descending order according to the finishing time
+#        3. if the sort has the circle, there is not DAG
+
+#        1> run the DFS; 2> sort the node as the descending order of the finish time
+#        
+#       
+#
 #        
 #   
-#    
+####       Strongly Connected Component - SCC
+#          
+#       Graph: Directed Grph - G
+#       SCC  1. a sbuset of the vertices
+#            2. there exist a path from v1 to vj and vice versa
+#            3. This path must entirely lie inside S
+#            4. 
+#   
+#          #
+#
+
+
