@@ -90,12 +90,28 @@
 ####       Strongly Connected Component - SCC
 #          
 #       Graph: Directed Grph - G
-#       SCC  1. a sbuset of the vertices
+#       SCC  1. a sbuset of the vertices;   
 #            2. there exist a path from v1 to vj and vice versa
 #            3. This path must entirely lie inside S
-#            4. 
+#             *** Kind like a circle inside of hte vertices
+#            
 #   
-#          #
+#       Maximal Strongly Connected Component 
+#          1. s in a SCC
+#          2. what ever verice add to the set, it failer to  add the new scc as the SCC
+#          3. if can be the bigger scc, then is not the maximal SCC
+#          4. 
+
+
+####       Property of the strong connected component 
+#           1. s1 and s2 are two diff MSCC, then s1 combine s2 = 0
+#           >. take s1 union s2, existe a path from v1 to v2 and vice verce, only invovle node in s1 union s2, s1 union s2 is a large SCC 
+#               contain s1 and s2. therefore, s1 and s2 cannot be mscc
+#           2. MSCC super graph, decomposing the scc, and mscc super graph
+#              MSCC super graph is a drectly acycliy graph, there is no circle
 #
-
-
+#           3. The reverse graph G^T has the same MSCC as the original
+# #         
+# 
+# 
+#     
